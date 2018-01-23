@@ -36,6 +36,8 @@ set showmatch
 set smartcase
 set tabstop=4 shiftwidth=4 softtabstop=4
 
+set wildchar=<Tab> wildmenu wildmode=full
+
 "Solarized
 let g:solarized_termcolors=256
 "syntax enable
