@@ -37,6 +37,8 @@ set showmatch
 set smartcase
 set tabstop=4 shiftwidth=4 softtabstop=4
 
+"Buffers
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 set wildchar=<Tab> wildmenu wildmode=full
 
 "Solarized
