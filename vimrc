@@ -59,16 +59,23 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 "Keymappings
 let mapleader=';'
-noremap <Leader>a :Ack <cword><cr>
+
 nmap tn :tabnew<CR>
 nmap tc :tabc<CR>
+nnoremap H gT
+nnoremap L gt
+
 nnoremap <Space> :nohlsearch<CR>
 set pastetoggle=<Leader>p
 set whichwrap+=<,>,h,l,[,]
-nnoremap H gT
-nnoremap L gt
+
 nnoremap <C-j> :bprev<CR>
 nnoremap <C-k> :bnext<CR>
+
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>l <C-w>l
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
 
 
 "CtrlP speedup
@@ -84,7 +91,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 "NERDTree
-nmap <Leader>a :NERDTreeToggle<CR>
+nnoremap <Leader>a :NERDTreeToggle<CR>
+nnoremap <Leader>f :NERDTreeFocus<CR>
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
