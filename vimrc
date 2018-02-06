@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
+"Plugin 'tmhedberg/SimpylFold'
 
 
 call vundle#end()
@@ -36,6 +37,7 @@ set number
 set showmatch
 set smartcase
 set tabstop=4 shiftwidth=4 softtabstop=4
+set foldmethod=indent
 
 "Buffers
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
@@ -60,6 +62,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 "Keymappings
 let mapleader=';'
 
+nnoremap <Leader>w :w<CR>
 nmap tn :tabnew<CR>
 nmap tc :tabc<CR>
 nnoremap H gT
@@ -95,6 +98,7 @@ nnoremap <Leader>a :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFocus<CR>
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+autocmd BufWinEnter * NERDTreeMirror
 
 "NeoComplete
 " Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
