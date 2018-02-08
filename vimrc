@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'vim-python/python-syntax'
 "Plugin 'tmhedberg/SimpylFold'
 
 
@@ -40,14 +41,15 @@ set tabstop=4 shiftwidth=4 softtabstop=4
 set foldmethod=indent
 
 "Buffers
-map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
+nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 set wildchar=<Tab> wildmenu wildmode=full
 
-"Solarized
+" Color 
 let g:solarized_termcolors=256
 "syntax enable
 "set background=light
 "colorscheme solarized
+let g:python_highlight_all = 1
 
 "Airline
 set laststatus=2
