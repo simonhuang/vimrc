@@ -45,10 +45,10 @@ nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 set wildchar=<Tab> wildmenu wildmode=full
 
 " Color 
-let g:solarized_termcolors=256
-"syntax enable
-"set background=light
-"colorscheme solarized
+" let g:solarized_termcolors=256
+syntax enable
+set background=light
+colorscheme solarized
 let g:python_highlight_all = 1
 
 "Airline
@@ -81,6 +81,8 @@ nnoremap <Leader>h <C-w>h
 nnoremap <Leader>l <C-w>l
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
+
+imap jk <Esc>
 
 
 "CtrlP speedup
